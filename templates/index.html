@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .btn {
+            background: #2196F3;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        img {
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Certificate Generator</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label>Upload CSV File (names column):</label>
+            <input type="file" name="csv" required><br><br>
+
+            <label>Upload Certificate Template (optional):</label>
+            <input type="file" name="template"><br><br>
+
+            <button type="submit">Next ➡️</button>
+        </form>
+    </div>
+</body>
+</html>
